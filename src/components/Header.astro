@@ -1,0 +1,32 @@
+---
+---
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo">
+      <span class="logo-leaf">🌿</span>
+      <div>
+        <span class="logo-name">OZE Kraków</span>
+        <span class="logo-tagline">Czysta energia dla Małopolski</span>
+      </div>
+    </a>
+    <nav>
+      <a href="/">Start</a>
+      <a href="/blog">Blog</a>
+      <a href="https://ecoaudyt.app" target="_blank" rel="noopener" class="nav-cta">Audyt →</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+.site-header { border-bottom: 3px solid var(--green); padding: 1rem 0; background: var(--bg); }
+.site-header .container { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; }
+.logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+.logo-leaf { font-size: 1.6rem; }
+.logo-name { display: block; font-family: 'Merriweather', serif; font-weight: 700; color: var(--green); font-size: 1.15rem; }
+.logo-tagline { display: block; font-size: 0.7rem; color: var(--text-muted); }
+nav { display: flex; gap: 1.25rem; align-items: center; }
+nav a { color: var(--text); font-size: 0.9rem; font-weight: 600; text-decoration: none; }
+nav a:hover { color: var(--green); }
+.nav-cta { background: var(--green); color: white !important; padding: 0.4rem 0.9rem; border-radius: 3px; }
+.nav-cta:hover { background: var(--green-light); }
+</style>

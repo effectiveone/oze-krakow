@@ -1,0 +1,31 @@
+---
+const year = new Date().getFullYear();
+---
+<footer>
+  <div class="container--wide" style="max-width:1000px;margin:0 auto;padding:2rem 1.5rem;">
+    <div class="f-row">
+      <div class="f-brand">
+        <strong>OZE Kraków</strong>
+        <p>Lokalny serwis o energii odnawialnej w Krakowie i Małopolsce.</p>
+      </div>
+      <nav class="f-nav">
+        <a href="/">Strona główna</a>
+        <a href="/blog">Blog</a>
+        <a href="https://ecoaudyt.app" target="_blank">ecoaudyt.app</a>
+      </nav>
+    </div>
+    <p class="f-copy">© {year} OZE Kraków</p>
+  </div>
+</footer>
+
+<style>
+footer { background: var(--bg-alt); border-top: 1px solid var(--border); margin-top: 4rem; }
+.f-row { display: flex; gap: 3rem; justify-content: space-between; margin-bottom: 1.5rem; padding-top: 0.5rem; }
+.f-brand strong { font-family: 'Merriweather', serif; color: var(--green); font-size: 1.1rem; display: block; margin-bottom: 0.5rem; }
+.f-brand p { color: var(--text-muted); font-size: 0.9rem; max-width: 350px; }
+.f-nav { display: flex; flex-direction: column; gap: 0.4rem; }
+.f-nav a { color: var(--text-muted); font-size: 0.9rem; }
+.f-nav a:hover { color: var(--green); }
+.f-copy { color: var(--text-muted); font-size: 0.8rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+@media (max-width: 600px) { .f-row { flex-direction: column; gap: 1.5rem; } }
+</style>

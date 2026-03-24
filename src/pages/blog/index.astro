@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+<Layout title="Blog — OZE Kraków">
+  <div class="container" style="padding-top:2.5rem;padding-bottom:3rem;">
+    <h1>Archiwum artykułów</h1>
+    <p style="color:var(--text-muted);margin-bottom:2rem;">{posts.length} artykułów o OZE w Małopolsce</p>
+    {posts.length > 0 ? posts.map(p => <PostCard title={p.data.title} description={p.data.description} slug={p.slug} pubDate={p.data.pubDate} tags={p.data.tags} />) : <p style="color:var(--text-muted);padding:3rem 0;text-align:center;">Artykuły pojawią się wkrótce.</p>}
+  </div>
+</Layout>
