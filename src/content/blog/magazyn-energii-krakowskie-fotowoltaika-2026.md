@@ -1,4 +1,5 @@
 ---
+title: "Magazyn energii w Krakowie – czy warto inwestować?"
 pubDate: 2026-05-02
 description: "Magazyny energii krakowskie – ceny, parametry, dofinansowanie i instalatorzy. Czy opłaca się inwestować w baterię do PV?"
 slug: "magazyn-energii-krakowskie-fotowoltaika-2026"
